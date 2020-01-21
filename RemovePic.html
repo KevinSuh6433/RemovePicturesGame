@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title> Remove the Boxes</title>
+    <meta charset="utf-8">
+    <script src="prototype.js"></script>
+    <script src="RemovePic.js"></script>
+
+    <!-- CSS -->
+    <style>
+        body {
+            background-image: url("back.jpg");
+            margin-left: 20%;
+            margin-right: 20%;
+        }
+
+        #all {
+            background-color: black;
+            height: 700px;
+            /*width: 100px;*/
+
+        }
+
+        #container {
+            height: 500px;
+            border: 1px solid black;
+            margin-bottom: 5%;
+        }
+
+        #highScore {
+            color: red
+        }
+
+        #font {
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+        }
+
+        #other {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #myButton {
+            font-size: 16px;
+        }
+
+        button {
+            height: 50px;
+            width: 100px;
+        }
+
+        p {
+            width: 70px;
+            height: 70px;
+            background-color: rgb(100, 100, 255);
+            border: solid 2px black;
+            position: absolute;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="all">
+        <div id="container">
+        </div>
+        <div>
+            <div id="other">
+                <button id="myButton"> START!! </button>
+            </div>
+            <h1 id="font" align="center">High Score: <span id="highScore">0.00</span> seconds</h1>
+        </div>
+    </div>
+</body>
+
+</html>
